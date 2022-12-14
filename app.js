@@ -2,7 +2,7 @@ const API_KEY = 'f53a50618d454bc5b52f3e22c445cb38'
 
 const getLatLon = async cityName => {
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}}&appid=${API_KEY}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}}&appid=${API_KEY}`
   )
   const data = await response.json()
   let { lat, lon, name } = data[0]
