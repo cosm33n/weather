@@ -1,0 +1,94 @@
+html {
+  font-family: Arial;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  user-select: none;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  letter-spacing: 1.5px;
+  display: grid;
+  place-content: start center;
+  background-color: #1e4769;
+  color: white;
+}
+h1 {
+  text-align: center;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* outline: 1px solid #4682b4; */
+  width: 520px;
+  /* height: 500px; */
+}
+
+.filter-green {
+  filter: invert();
+}
+
+#form {
+  /* outline: 1px solid steelblue; */
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+}
+
+#form > label {
+  text-align: center;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
+  font-size: 12px;
+}
+
+#form > input {
+  display: block;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  /* font-weight: bold; */
+  color: #1e4769;
+  margin: 0 10px;
+  /* width: 100%; */
+}
+
+.weather-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  /* outline: 1px solid #4682b4; */
+  height: 100%;
+}
+
+.city-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.conditions {
+  font-size: 1rem;
+}
+
+.temperature {
+  font-size: 4rem;
+}
